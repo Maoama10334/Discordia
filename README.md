@@ -1,6 +1,6 @@
 # Discordia
 
-*Discord* is a simple Discord-like application written in Electron designed to test text, voice, and multimedia sharing, alongside other fun features.
+*Discord* is a simple and lightweight Discord-like application written in Electron designed to test text, voice, and multimedia sharing, alongside other fun features.
 
 ## *Features*
 

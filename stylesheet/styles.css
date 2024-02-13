@@ -1,0 +1,175 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f3f5;
+}
+
+#chat-container {
+  height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  border-radius: 15px;
+  padding: 20px;
+  padding-bottom: 80px; /* Adjust this value based on the height of your #input-container */
+  background-color: var(--secondary-bg-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+#input-container {
+  display: flex;
+  align-items: center;
+  position: fixed; /* Fixed position */
+  bottom: 0; /* Stick to the bottom of the screen */
+  left: 0; /* Align to the left of the screen */
+  right: 0; /* Align to the right of the screen */
+  background-color: var(--primary-bg-color); /* Same background color as the body */
+  padding: 20px; /* Add some padding */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+#message-input,
+#image-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+#image-label {
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#image-label:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+button {
+  padding: 10px;
+  background-color: #7289da;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #677bc4;
+}
+
+button i {
+  font-size: 18px;
+}
+
+#message-input:focus,
+#image-input:focus {
+  outline: none;
+  border-color: #7289da;
+}
+#app-container {
+  display: flex; /* Use Flexbox for layout */
+}
+
+#sidebar {
+  width: 75px;
+  background-color: var(--secondary-bg-color);
+  transition: width 0.5s;
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: column; /* Stack the server icons vertically */
+  align-items: center; /* Center the server icons horizontally */
+  justify-content: start; /* Align the server icons to the top */
+}
+
+.server-icon {
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: column; /* Stack the image and name vertically */
+  align-items: center; /* Center the image and name horizontally */
+  margin-bottom: 20px; /* Add some space between the server icons */
+}
+
+.server-icon span {
+  display: none; /* Hide the server name by default */
+}
+
+.server-icon img {
+  width: 50px;
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+.server-icon:hover img {
+  transform: scale(1.2);
+}
+
+/* Implement animation and expansion on hover */
+#sidebar:hover {
+  width: 250px;
+}
+
+:root {
+  --primary-bg-color: #36393F;
+  --secondary-bg-color: #2C2F33;
+  --text-color: #FFFFFF;
+}
+
+[data-theme="dark"] {
+  --primary-bg-color: #36393F;
+  --secondary-bg-color: #2C2F33;
+  --text-color: #FFFFFF;
+}
+
+[data-theme="light"] {
+  --primary-bg-color: #FFFFFF;
+  --secondary-bg-color: #F3F4F6;
+  --text-color: #2C2F33;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+}
+
+/*make in line with profile pic*/
+.message {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message-image {
+  border-radius: 8px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.message-content {
+  flex: 1;
+}
+
+.message-timestamp{
+  font-size: 12px;
+  color: #72767d;
+  margin-left: 10px;
+}
+
+

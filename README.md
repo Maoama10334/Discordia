@@ -33,7 +33,7 @@ To install and run *Discordia* locally, follow these steps:
    Use Git to clone the project's repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/yourapp.git
+   git clone https://github.com/Maoama10334/Discordia
    ```
 
 2. **Install Dependencies**

@@ -1,6 +1,6 @@
 # Discordia
 
-*Discord* is a simple Discord-like application written in Electron designed to test text, voice, and multimedia sharing, alongside other fun features.
+*Discord* is a simple and lightweight Discord-like application written in Electron designed to test text, voice, and multimedia sharing, alongside other fun features.
 
 ## *Features*
 
@@ -33,7 +33,7 @@ To install and run *Discordia* locally, follow these steps:
    Use Git to clone the project's repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/yourapp.git
+   git clone https://github.com/Maoama10334/Discordia
    ```
 
 2. **Install Dependencies**
